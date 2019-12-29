@@ -1,26 +1,50 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import VideoCover from "react-video-cover";
+import Nav from './components/Nav';
+import Main from './components/Main';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+import "./App.css";
+
+export default class App extends React.Component {
+  state = {
+    resizeNotifier: () => {}
+  };
+
+  render() {
+    const videoOptions = {
+      src: "/https://media.giphy.com/media/Svjh5xx7i0Fy2glPOI/giphy.gif",
+      autoPlay: true,
+      loop: true,
+      muted: true
+    };
+    const style = {
+      width: "100vw",
+      height: "100vh",
+      position: "fixed"
+    };
+
+    return (
+      <>
+      <Header/>
+      <Nav/>
+      <Main/>
+      <Footer/>
+
+      
+        {/* <VideoCover
+          videoOptions={videoOptions}
+          remeasureOnWindowResize
+          getResizeNotifier={resizeNotifier => {
+            this.state({
+              resizeNotifier
+            });
+          }} */}
+        />
+    </>
+    );
+  }
 }
 
-export default App;
