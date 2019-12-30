@@ -29,22 +29,18 @@ class Footer extends Component {
                   </li>
                   <li class="footer__item">
                     <a href="#" class="footer__link">
-                      Contact us
+                      Contact
+                    </a>
+                  </li>
+                 
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">
+                      GitHub
                     </a>
                   </li>
                   <li class="footer__item">
                     <a href="#" class="footer__link">
-                      Carrers
-                    </a>
-                  </li>
-                  <li class="footer__item">
-                    <a href="#" class="footer__link">
-                      Privacy policy
-                    </a>
-                  </li>
-                  <li class="footer__item">
-                    <a href="#" class="footer__link">
-                      Terms
+                      Resume
                     </a>
                   </li>
                 </ul>
@@ -52,18 +48,10 @@ class Footer extends Component {
             </div>
             <div class="col-1-of-2">
               <p class="footer__copyright">
-                Built by{" "}
                 <a href="#" class="footer__link">
-                  Jonas Schmedtmann
-                </a>{" "}
-                for his online course{" "}
-                <a href="#" class="footer__link">
-                  Advanced CSS and Sass
+                  Kahil Nayton
                 </a>
-                . Copyright &copy; by Jonas Schmedtmann. You are 100% allowed to
-                use this webpage for both personal and commercial use, but NOT
-                to claim it as your own design. A credit to the original author,
-                Jonas Schmedtmann, is of course highly appreciated!
+                . Copyright &copy; 2019
               </p>
             </div>
           </div>

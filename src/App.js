@@ -6,7 +6,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 
-import "./App.css";
+import "./sass/main.scss";
 
 export default class App extends React.Component {
   state = {
@@ -33,7 +33,7 @@ export default class App extends React.Component {
       <Main/>
       <Footer/>
 
-      
+
         {/* <VideoCover
           videoOptions={videoOptions}
           remeasureOnWindowResize

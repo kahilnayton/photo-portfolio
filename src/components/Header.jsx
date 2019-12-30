@@ -12,12 +12,12 @@ class Header extends Component {
 
         <div class="header__text-box">
           <h1 class="heading-primary">
-            <span class="heading-primary--main">Outdoors</span>
-            <span class="heading-primary--sub">is where life happens</span>
+            <span class="heading-primary--main">Pictures</span>
+            <span class="heading-primary--sub">I take</span>
           </h1>
 
           <a href="#section-tours" class="btn btn--white btn--animated">
-            Discover our tours
+            Here are some photos
           </a>
         </div>
       </>
