@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import logo from '../img/camera.png';
 
 class Footer extends Component {
   render() {
@@ -12,9 +13,9 @@ class Footer extends Component {
                 media="(max-width: 37.5em)"
               ></source>
               <img
-                srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x"
+                srcset={logo}
                 alt="Full logo"
-                src="img/logo-green-2x.png"
+                src={logo}
               ></img>
             </picture>
           </div>
@@ -34,12 +35,12 @@ class Footer extends Component {
                   </li>
                  
                   <li class="footer__item">
-                    <a href="#" class="footer__link">
+                    <a href="https://github.com/kahilnayton" class="footer__link">
                       GitHub
                     </a>
                   </li>
                   <li class="footer__item">
-                    <a href="#" class="footer__link">
+                    <a href="" class="footer__link">
                       Resume
                     </a>
                   </li>

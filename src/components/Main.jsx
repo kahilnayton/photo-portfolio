@@ -1,4 +1,7 @@
 import React from 'react';
+import wall from '../img/wall.jpg';
+import goose from '../img/goose.jpg';
+import ships from '../img/ships.jpg';
 
 
 export default class Main extends React.Component {
@@ -41,23 +44,23 @@ return (
                                  sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
                                  alt="Photo 1"
                                  class="composition__photo composition__photo--p1"
-                                 src="img/nat-1-large.jpg"></img>
+                                 src={wall}></img>
 
                             <img srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
                                  sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
                                  alt="Photo 2"
                                  class="composition__photo composition__photo--p2"
-                                 src="img/nat-2-large.jpg"></img>
+                                 src={goose}></img>
 
                             <img srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
                                  sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
                                  alt="Photo 3"
                                  class="composition__photo composition__photo--p3"
-                                 src="img/nat-3-large.jpg"></img>
+                                 src={ships}></img>
 
-                            <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1"></img>
-                            <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2"></img>
-                            <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3"></img>
+                            <img src={wall} alt="Photo 1" class="composition__photo composition__photo--p1"></img>
+                            <img src={goose} alt="Photo 2" class="composition__photo composition__photo--p2"></img>
+                            <img src={ships} alt="Photo 3" class="composition__photo composition__photo--p3"></img>
                         </div>
                     </div>
                 </div>
@@ -111,7 +114,7 @@ return (
             <section class="section-tours" id="section-tours">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
-                        Popular pics
+                        Photos
                     </h2>
                 </div>
 
@@ -171,7 +174,7 @@ return (
                                         <p class="card__price-only">Buy it for</p>
                                         <p class="card__price-value">$0</p>
                                     </div>
-                                    <a href="#popup" class="btn btn--white">Buy now</a>
+                                    <a href="#popup" class="btn btn--white">More Info</a>
                                 </div>
                             </div>
                         </div>
@@ -204,7 +207,7 @@ return (
                                         <p class="card__price-only">buy it for</p>
                                         <p class="card__price-value">$</p>
                                     </div>
-                                    <a href="#popup" class="btn btn--white">Buy now</a>
+                                    <a href="#popup" class="btn btn--white">More Info</a>
                                 </div>
                             </div>
                         </div>
@@ -212,114 +215,10 @@ return (
                 </div>
 
                 <div class="u-center-text u-margin-top-huge">
-                    <a href="#" class="btn btn--green">Check out all pictures</a>
-                </div>
-            </section>
-
-            <section class="section-stories">
-                <div class="bg-video">
-                    <video class="bg-video__content" autoplay muted loop>
-                        <source src="img/video.mp4" type="video/mp4"></source>
-                        <source src="img/video.webm" type="video/webm"></source>
-                        Your browser is not supported
-                    </video>
-                </div>
-
-                <div class="u-center-text u-margin-bottom-big">
-                    <h2 class="heading-secondary">
-                        We make people happy
-                    </h2>
-                </div>
-
-                <div class="row">
-                    <div class="story">
-                        {/* <figure class="story__shape">
-                            <img src="img/nat-8.jpg" alt="Person on a tour" class="story__img">
-                            <figcaption class="story__caption">Mary Smith</figcaption>
-                        </figure> */}
-                        <div class="story__text">
-                            <h3 class="heading-tertiary u-margin-bottom-small">Takes a good pic mte </h3>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur
-                                ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero
-                                repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="story">
-                        <figure class="story__shape">
-                            <img src="img/nat-9.jpg" alt="Person on a tour" class="story__img"></img>
-                            <figcaption class="story__caption">Jack</figcaption>
-                        </figure>
-                        <div class="story__text">
-                            <h3 class="heading-tertiary u-margin-bottom-small">In photography there is a reality so subtle that it becomes more real than reality</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur
-                                ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero
-                                repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="u-center-text u-margin-top-huge">
-                    <a href="#" class="btn-text">Read all stories &rarr;</a>
-                </div>
-            </section>
-
-            <section class="section-book">
-                <div class="row">
-                    <div class="book">
-                        <div class="book__form">
-                            <form action="#" class="form">
-                                <div class="u-margin-bottom-medium">
-                                    <h2 class="heading-secondary">
-                                        Buy pictures now!
-                                    </h2>
-                                </div>
-
-                                <div class="form__group">
-                                    <input type="text" class="form__input" placeholder="Full name" id="name" required></input>
-                                    <label for="name" class="form__label">Full name</label>
-                                </div>
-
-                                <div class="form__group">
-                                    <input type="email" class="form__input" placeholder="Email address" id="email" required></input>
-                                    <label for="email" class="form__label">Email address</label>
-                                </div>
-
-                                <div class="form__group u-margin-bottom-medium">
-                                    <div class="form__radio-group">
-                                        <input type="radio" class="form__radio-input" id="small" name="size"></input>
-                                        <label for="small" class="form__radio-label">
-                                            <span class="form__radio-button"></span>
-                                            other input
-                                        </label>
-                                    </div>
-
-                                    <div class="form__radio-group">
-                                        <input type="radio" class="form__radio-input" id="large" name="size"></input>
-                                        <label for="large" class="form__radio-label">
-                                            <span class="form__radio-button"></span>
-                                            more 
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div class="form__group">
-                                    <button class="btn btn--green">Next step &rarr;</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
+                    <a href="#" class="btn btn--green">Top</a>
                 </div>
             </section>
         </main>
-
-        
 
         <div class="popup" id="popup">
             <div class="popup__content">

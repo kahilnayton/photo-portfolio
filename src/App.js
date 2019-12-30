@@ -3,6 +3,7 @@ import VideoCover from "react-video-cover";
 import Nav from './components/Nav';
 import Main from './components/Main';
 import Header from './components/Header';
+import Form from './components/Form'
 import Footer from './components/Footer';
 
 
@@ -31,6 +32,7 @@ export default class App extends React.Component {
       <Header/>
       <Nav/>
       <Main/>
+      <Form/>
       <Footer/>
 
 

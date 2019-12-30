@@ -51,30 +51,30 @@
 
 
     // FRONT SIDE STYLING
-    // &__picture {
-    //     background-size: cover;
-    //     height: 23rem;
-    //     background-blend-mode: screen;
-    //     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    //     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    //     border-top-left-radius: 3px;
-    //     border-top-right-radius: 3px;
+    &__picture {
+        background-size: cover;
+        height: 23rem;
+        background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
         
-    //     &--1 {
-    //         background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), 
-    //         url(../img/nyc.jpg);
-    //     }
+        &--1 {
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), 
+            url(../../img/wall.jpg);
+        }
 
-    //     &--2 {
-    //         background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), 
-    //         url(../img/wall.jpg);
-    //     }
+        &--2 {
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), 
+            url(../../img/stairs.jpg);
+        }
 
-    //     &--3 {
-    //         background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), 
-    //         url(../img/wine.jpg);
-    //     }
-    // }
+        &--3 {
+            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), 
+            url(../../img/wine.jpg);
+        }
+    }
 
     &__heading {
         font-size: 2.8rem;
