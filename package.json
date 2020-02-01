@@ -24,7 +24,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-
     "test-next": "echo \"Error: no test specified\" && exit 1",
     "dev": "node server.js",
     "build-next": "NODE_ENV=production node server.js",
